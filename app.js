@@ -58,19 +58,17 @@ myCar.model = 'q7';
 
 console.log('Exercise 5:', car, myCar);
 
-
-// Create an object named userProfile. 
-// Define a variable named propertyName and assign a string to it (like a username, age, or email). 
+// Create an object named userProfile.
+// Define a variable named propertyName and assign a string to it (like a username, age, or email).
 // Use propertyName as a dynamic key in userProfile, assigning a relevant value.
 
 // Your code here
-const propertyName = 'username'
+const propertyName = 'username';
 const userProfile = {
   [propertyName]: 'Current_User1',
 };
 
 console.log('Exercise 6:', userProfile);
-
 
 // Create a function that takes two parameters, `noun` and `adjective`, both with the following respective default values:
 
@@ -83,7 +81,7 @@ console.log('Exercise 6:', userProfile);
 // Your code here
 
 function sentence(noun = 'cat', adj = 'white') {
-  return `The ${noun} is ${adj}. `
+  return `The ${noun} is ${adj}. `;
 }
 
 console.log('Exercise 8:', sentence(), sentence('dog', 'brown'));
@@ -102,20 +100,19 @@ let pizza = 'tasty';
 
 console.log('Exercise 9:', pizza === 'tasty' ? 'yum' : 'yuck');
 
-
 // 1. SET LANGUAGE
 
-// Construct a single line of code that assigns a default value using the logical OR operator. This line should match the logic of the following statement: 
+// Construct a single line of code that assigns a default value using the logical OR operator. This line should match the logic of the following statement:
 
 // "LANG is equal to localLangConfig or the default value of English."
 
-const localLangConfig = null;  // Change to 'es', 'fr', etc., or keep it null
+const localLangConfig = null; // Change to 'es', 'fr', etc., or keep it null
 
 // a. Create a variable called LANG
 // b. Assign LANG the value of localLangConfig or 'en' as a default
 
 // Your code here
-const LANG = localLangConfig || 'en'
+const LANG = localLangConfig || 'en';
 
 // Log the result
 console.log('Exercise 10:', 'Language setting:', LANG);
@@ -128,7 +125,7 @@ const userSavedTheme = 'dark'; // Change to 'dark', 'contrast', etc., or keep it
 // b. Assign USER_THEME the value of userSavedTheme or 'light' as a default
 
 // Your code here
-const USER_THEME = userSavedTheme || 'light'
+const USER_THEME = userSavedTheme || 'light';
 
 // Log the result
 console.log('Exercise 10:', 'User theme setting:', USER_THEME);
@@ -139,7 +136,5 @@ const adventurer = {
   name: 'Alice',
 };
 
-let cat = adventurer.cat?.age
-
-
-console.log('Exercise 11:', cat);
+let cat = adventurer.cat?.age;
+console.log(cat);
